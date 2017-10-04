@@ -1,0 +1,29 @@
+{
+  "name": "fetch-poll",
+  "version": "0.0.1",
+  "description": "A fetch library with retry and polling support",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
+    "start": "npm run build && node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unisoftapps/fetch-poll.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/unisoftapps/fetch-poll/issues"
+  },
+  "homepage": "https://github.com/unisoftapps/fetch-poll#readme",
+  "dependencies": {
+    "node-fetch": "^1.7.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "rimraf": "^2.6.2"
+  }
+}
